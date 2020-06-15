@@ -57,4 +57,4 @@ none so far
 
 ## Support and contact details
 feel free to send me feedback through email or bugs  at tellvinchimani@gmail.com
-### License
+### [MIT LICENSE](https://github.com/Tellvinch/chance01/blob/master/license.md)
