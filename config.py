@@ -4,14 +4,8 @@ class Config:
     '''
     General configuration parent class
     '''
-    SECRET_KEY= 'iajmcdijdicdkowoxasn'
-    SQLALCHEMY_DATABASE_URI ='postgresql+psycopg2://neville:quelde@localhost/pich'
-    UPLOADED_PHOTOS_DEST ='app/static/photos'    
-    MAIL_SERVER = 'smtp.googlemail.com'
-    MAIL_PORT = 587
-    MAIL_USE_TLS = True
-    MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
-    MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
+    SECRET_KEY= '142297'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://tellvinch:Bling calitos@localhost/chance01'
 
 class ProdConfig(Config):
     '''

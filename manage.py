@@ -1,12 +1,12 @@
 # Import db from app factory
 from app import db
 from app import create_app
-from flask_script import Manager,Server
+from flask_script import Manager, Server
 # Connect to models
-from app.models import User,Role
+from app.models import User, Role
 # Set up migrations
-from flask_migrate import Migrate,MigrateCommand
-from werkzeug.security import  generate_password_hash , check_password_hash
+from flask_migrate import Migrate, MigrateCommand
+from werkzeug.security import generate_password_hash, check_password_hash
 
 # Creating app instance
 # app = create_app('test')
@@ -18,10 +18,11 @@ app = create_app('production')
 manager = Manager(app)
 
 # Create migrate instance
-migrate = Migrate(app,db)
+migrate = Migrate(app, db)
 
-manager.add_command('server',Server)
-manager.add_command('db',MigrateCommand)
+manager.add_command('server', Server)
+manager.add_command('db', MigrateCommand)
+
 
 @manager.command
 def test():
@@ -36,7 +37,7 @@ def test():
 
 @manager.shell
 def make_shell_context():
-    return dict( app=app, db=db, User=User, Role=Role)
+    return dict(app=app, db=db, User=User, Role=Role)
 
 
 if __name__ == '__main__':
