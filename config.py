@@ -5,7 +5,7 @@ class Config:
     General configuration parent class
     '''
     SECRET_KEY= '142297'
-    SQLALCHEMY_DATABASE_URI ='postgresql+psycopg2://tellvinch:Bling calitos@localhost/chance01'
+    SQLALCHEMY_DATABASE_URI ='postgresql+psycopg2://tellvinch:database@localhost/chance01'
     UPLOADED_PHOTOS_DEST ='app/static/photos'    
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
