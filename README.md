@@ -10,7 +10,7 @@ This is an application that allows a user to create a pitch category if it doesn
 
 #### Screenshot
 
-![](shots.png)
+![](shots1.png)
 
 ## Setup/Installation Requirements
 
