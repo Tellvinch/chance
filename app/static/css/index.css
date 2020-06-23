@@ -1,5 +1,5 @@
 /*Styles for the home page*/
-.chip {
+.intro {
     display: inline-block;
     padding: 0 25px;
     height: 90px;
@@ -8,8 +8,7 @@
     border-radius: 55px;
     background-color: #f1f1f1;
 }
-#navbar-default {
-    background-color:teal;
-    background-image: none;
-    background-repeat: no-repeat;
-   }
+.navbar{
+    background:rgb(7, 7, 31);
+    line-height: 50px;
+}
