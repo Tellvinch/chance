@@ -5,28 +5,23 @@
 <!-- Navbar block -->
 {% block navbar %}
 <div class="container-fluid">
-  <div class="navbar navbar-inverse" id="navbar-default" role="navigation">
-    <div class="navbar-header">
-   
+  <div class="navbar navbar-expand-sm >
       <a href="/" class="navbar-brand">Chance</a>
-    </div>
-
-    <div class="navbar navbar-expand-sm ">
      
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="navbar-nav">
         {% if current_user.is_authenticated %}
-        <li>
-          <a href="{{url_for('main.profile',uname=current_user.username)}}"
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('main.profile',uname=current_user.username)}}"
             >Profile</a
           >
         </li>
-        <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
+        <li class="nav-item"><a href="{{url_for('auth.logout')}}">Sign out</a></li>
         {% else %}
-        <li>
-          <a href="{{url_for('auth.register')}}">Sign Up</a>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('auth.register')}}">Sign Up</a>
         </li>
-        <li>
-          <a href="{{url_for('auth.login')}}">Login</a>
+        <li class="nav-item">
+          <a class="nav-link"  href="{{url_for('auth.login')}}">Login</a>
         </li>
         {%endif%}
       </ul>
