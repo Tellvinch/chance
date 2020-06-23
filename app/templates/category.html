@@ -2,19 +2,19 @@
 {% import "bootstrap/wtf.html" as wtf %}
 
 {% block content %}
-    <div class="container">
+<div class="container">
 
     <h1>Pitches</h1>
       
       {% for pitch in pitches  %}
-      <div class="jumbotron pb-1" >
+    <div class="jumbotron pb-1" >
         
         <p>
           {{ pitch.name }}
         </p>
         <a href="/comment/new/{{pitch.id}}"><button type="button" class="btn btn-success btn-sm m-a pt-1">comment</button></a>
-      </div>
-      <button type="button" class="btn btn-danger btn-sm m-1 pt-1" data-toggle="modal" data-target="#deleteModal">Delete</button>
+        <button type="button" class="btn btn-danger btn-sm m-1 pt-1" data-toggle="modal" data-target="#deleteModal">Delete</button>
+      
       
       
     </div>
