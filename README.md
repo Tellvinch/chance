@@ -1,9 +1,17 @@
 # Chance
+
 #### App that allows on to post and views pitches , {July 3 2020}
-#### By **{Tellvinch imani}**
+
+#### By Tellvinch imani
+
 ## Description
 
 This is an application that allows a user to create a pitch category if it doesnt exist and add pitch content. A user can also be able to comment  on another users pitch.
+
+#### Screenshot
+
+![](shots.png)
+
 ## Setup/Installation Requirements
 
 Clone this repository and navigate to the folder. Run the following commands to allow functionality of the app:-
