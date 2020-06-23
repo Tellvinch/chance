@@ -5,9 +5,10 @@
 <!-- Navbar block -->
 {% block navbar %}
 <div class="container-fluid">
-  <div class="navbar navbar-expand-sm >
-      <a href="/" class="navbar-brand">Chance</a>
-     
+  <nav class="navbar navbar-expand-sm" >
+    <h1>Chance</h1>
+  <div class="collapse navbar-collapse justify-content-end" id="nav-content">   
+      <h1>Chance</h1>
        <ul class="navbar-nav">
            {% if current_user.is_authenticated %}
          <li class="nav-item">
@@ -23,7 +24,7 @@
          </li>
            {%endif%}
       </ul>
-    
-  </div>
+    </div>
+    </nav>
 </div>
 {% endblock %}
